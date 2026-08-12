@@ -1,0 +1,6 @@
+url=https://tutorialsninja.com/demo/
+my_account=//a[@title='My Account']
+login_link=Login
+email_input=input-email
+password_input=input-password
+login_button=//input[@value='Login']

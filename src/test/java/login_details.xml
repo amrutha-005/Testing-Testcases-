@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<login_details>
+    <username>name:username</username>
+    <password>name:password</password>
+    <loginbutton>xpath://button[@type='submit']</loginbutton>
+    <dashboard>xpath://h6[text()='Dashboard']</dashboard>
+</login_details>
