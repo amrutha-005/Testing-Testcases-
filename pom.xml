@@ -17,6 +17,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <selenium.version>4.34.0</selenium.version>
         <poi.version>5.2.5</poi.version>
+        <cucumber.version>7.18.0</cucumber.version>
     </properties>
 
     <dependencies>
@@ -34,11 +35,32 @@
             <version>${selenium.version}</version>
         </dependency>
 
+        <!-- Selenium DevTools (Silences CDP Warning) -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v131</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
         <!-- WebDriverManager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>6.3.4</version>
+        </dependency>
+
+        <!-- Cucumber Java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <!-- Cucumber TestNG Integration -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
 
         <!-- TestNG -->
@@ -64,7 +86,7 @@
             <version>2.0.17</version>
         </dependency>
 
-        <!-- Log4j Core (Fixes Log4j2 status logger warning) -->
+        <!-- Log4j Core -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -99,7 +121,7 @@
             <version>${poi.version}</version>
         </dependency>
 
-        <!-- Apache POI OOXML Full (Schemas for complete XLSX support) -->
+        <!-- Apache POI OOXML Full -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml-full</artifactId>
@@ -120,7 +142,7 @@
             <version>5.1.1</version>
         </dependency>
 
-        <!-- Apache Commons IO (For Screenshot FileUtils) -->
+        <!-- Apache Commons IO -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
