@@ -28,20 +28,6 @@
             <version>${selenium.version}</version>
         </dependency>
 
-        <!-- Selenium Chromium Driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chromium-driver</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-
-        <!-- Selenium DevTools (Silences CDP Warning) -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v131</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-
         <!-- WebDriverManager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -71,7 +57,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- JUnit 4 -->
+        <!-- JUnit 4 (Restored to fix pac1 errors) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
